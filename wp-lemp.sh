@@ -7,7 +7,6 @@ installations() {
 	if [ $(date | awk '{print $2 $3}') != $(ls -al /var/lib/apt/periodic/update-success-stamp | awk '{print $6 $7}') ]
 	then
 		apt update -y
-		apt upgrade -y
 	fi
 	apt install -y software-properties-common;
 	add-apt-repository -y ppa:ondrej/php;
