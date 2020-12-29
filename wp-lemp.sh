@@ -14,7 +14,7 @@ installations() {
 	add-apt-repository -y ppa:ondrej/php;
 	apt update -y;
 	apt install nginx -y;
-	apt install php7.4-mcrypt php7.4-intl php7.4-curl php7.4-xsl php7.4-mbstring php7.4-xsl php7.4-zip php7.4-soap php7.4-gd php7.4-bcmath php7.4-mysql php7.4-fpm -y;
+	apt install  php7.4-common php7.4-intl php7.4-curl php7.4-xsl php7.4-mbstring php7.4-xsl php7.4-zip php7.4-soap php7.4-gd php7.4-bcmath php7.4-mysql php7.4-fpm -y;
 	apt install mysql-server mysql-client -y;
 	apt install composer -y;
 }
