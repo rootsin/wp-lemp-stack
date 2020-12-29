@@ -8,7 +8,6 @@ installations() {
 	then
 		apt update -y
 		apt upgrade -y
-		apt dist-upgrade -y
 	fi
 	apt install -y software-properties-common;
 	add-apt-repository -y ppa:ondrej/php;
